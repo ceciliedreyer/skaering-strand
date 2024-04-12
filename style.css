@@ -245,6 +245,7 @@ section.secondary {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+    max-width: fit-content;
   }
 
   section {
