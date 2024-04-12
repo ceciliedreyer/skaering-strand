@@ -1,10 +1,12 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
+  background-color: white;
 }
 
 header {
@@ -82,6 +84,26 @@ main h3 {
   padding: 0;
 }
 
+main h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5px;
+  text-align: left;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+  color: #272044;
+  margin: 0;
+}
+
 main p {
   font-family: Poppins;
   font-size: 16px;
@@ -132,21 +154,31 @@ footer a {
 }
 
 section {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
+  max-width: 1400px;
 }
 
 .img-responsive {
+  display: block;
   max-width: 100%;
+}
+
+.section-img {
+  margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  grid-gap: 64px;
+  width: 1400px;
 }
 
-.grid-3-columns {
+.grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -154,20 +186,45 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    max-width: 100%;
-  }
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
 
-  section {
-    max-width: 80%;
-  }
+.text-center {
+  text-align: center;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+.card {
+  background-color: white;
+  margin-top: 100px;
+}
 
+.card-body {
+  padding: 32px 32px 24px 32px;
+}
+
+.card-footer {
+  margin: 0 32px 24px 32px;
+}
+
+.button {
+  display: block;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  color: white;
+  background-color: #462cb2;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
   header {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -185,15 +242,11 @@ section {
     font-size: 12px;
   }
 
-  .grid-3-columns {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
 
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
   section {
     padding: 30px;
   }
