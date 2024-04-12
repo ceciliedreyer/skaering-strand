@@ -86,8 +86,10 @@ main p {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 16px;
+  line-height: 1.5;
   text-align: left;
+  opacity: 0.7;
 }
 
 footer {
