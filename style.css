@@ -18,6 +18,7 @@ header {
   color: white;
   padding-top: 220px;
   padding-bottom: 220px;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -251,7 +252,8 @@ section.secondary {
   section {
     padding: 30px;
   }
-  .container {
-    max-width: 100%;
+
+  .secondary {
+    padding: 30px;
   }
 }
