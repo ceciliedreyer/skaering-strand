@@ -18,22 +18,25 @@ body {
 
 .img-responsive {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
+  max-width: 1400px;
 }
 
 .grid-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+  padding: 50px 171px;
 }
 
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+  padding: 50px 171px;
 }
 
 .section-img {
@@ -67,14 +70,15 @@ body {
   text-decoration: none;
 }
 
-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 100px;
+main {
+  margin-top: 60px;
 }
 
 section.secondary {
   background-color: #f8f8f8;
+  margin-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 header {
@@ -222,12 +226,15 @@ footer a {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
-  section {
-    padding: 0px;
-    margin: 0px;
-  }
+.spacing {
+  padding-right: 171px;
+}
 
+.img-spacing {
+  padding-left: 171px;
+}
+
+@media (max-width: 900px) {
   .card {
     margin: 20px;
   }
@@ -252,6 +259,17 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
-    max-width: fit-content;
+  }
+
+  .grid-2-columns,
+  .grid-3-columns,
+  .grid-3-columns-first-narrow,
+  .img-spacing,
+  .spacing {
+    padding: 20px;
+  }
+
+   {
+    padding: 20px;
   }
 }
